@@ -4,6 +4,7 @@ import androidx.compose.foundation.layout.Column
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
@@ -16,22 +17,26 @@ fun DigitalClockComponent(
     second: String = "00",
     amOrPm: String
 ) {
-    Text(
-        text = "$hour:$minute:$second $amOrPm",
-        style = MaterialTheme.typography.titleLarge,
-        fontWeight = FontWeight.SemiBold,
-        letterSpacing = 3.sp
-    )
-    Text(
-        text = "Kolkata , India",
-        style = MaterialTheme.typography.bodyMedium.merge(
-            TextStyle(
-                color = MaterialTheme.colorScheme.onBackground.copy(
-                    alpha = .6f
+    Column(
+        horizontalAlignment = Alignment.CenterHorizontally
+    ) {
+        Text(
+            text = "$hour:$minute:$second $amOrPm",
+            style = MaterialTheme.typography.titleLarge,
+            fontWeight = FontWeight.SemiBold,
+            letterSpacing = 3.sp
+        )
+        Text(
+            text = "Kolkata , India",
+            style = MaterialTheme.typography.bodyMedium.merge(
+                TextStyle(
+                    color = MaterialTheme.colorScheme.onBackground.copy(
+                        alpha = .6f
+                    )
                 )
             )
         )
-    )
+    }
 }
 
 @Preview(showBackground = true)

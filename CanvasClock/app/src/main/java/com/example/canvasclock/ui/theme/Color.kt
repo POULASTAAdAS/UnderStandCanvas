@@ -9,7 +9,7 @@ val SecondaryContainerColor = Color(0xFFD81F72)
 val OnSurfaceVariantColor = Color(0xFF364767)
 
 val AnalogClockOuterBoxShadow1 = Color.White.copy(alpha = 0.41f)
-val AnalogClockOuterBoxShadow2 = Color(0x48C7D6EA)
+val AnalogClockOuterBoxShadow2 = Color(0x48F1F7FF)
 val AnalogClockOuterBoxShadow3 = Color.White
 val AnalogClockOuterBoxShadow4 = Color(0xffC4D4E7)
 val AnalogClockOuterBoxColor = Color(0xffE7EEFB)

@@ -12,23 +12,17 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 
 @Composable
-fun HeaderComponent(
-    paddingValues: PaddingValues
-) {
-    Box(
-        modifier = Modifier
-            .padding(top = paddingValues.calculateTopPadding() + 10.dp)
-    ) {
+fun HeaderComponent() {
+
         Text(
             text = "C L O C K",
             style = MaterialTheme.typography.titleLarge,
             fontWeight = FontWeight.SemiBold
         )
-    }
 }
 
 @Preview
 @Composable
 private fun Preview() {
-    HeaderComponent(PaddingValues(10.dp))
+    HeaderComponent()
 }
